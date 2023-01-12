@@ -95,28 +95,65 @@
         <div class="investment-container">
             <h3 class="title"> Internet Banking</h3>
             <hr>
-            <div class="investment">
-                <!-- <div class="investment-img-container">
-                    <img src="../images/sobrenos.png" alt="Sobre Nós">
-                </div> -->
+            <div class="investment full_width">
+                
                 <div class="investment-text">
-                    <!-- <h3 class="title">O capital privado está crescendo. A hora de investir é agora.</h3> -->
-                    <p>No Unibanco, o dinheiro, assim como as emoções, é algo que você deve controlar para manter sua vida nos trilhos. Acreditamos que equilibrar o seu dinheiro é a chave para ter o suficiente e a velocidade do seu sucesso é limitada apenas pela sua dedicação e pelo que você está disposto a sacrificar. É por isso que quando o dinheiro percebe que está em boas mãos, ele quer ficar e se multiplicar nessas mãos.</p><br>
-                    <p>O UNIBANCO está aqui para lhe dar acesso a esta oportunidade de crescimento sem precedentes
-                        para que você possa entrar em ação.</p>
-                    <!-- <div class="invest-link">
-                        <a href="#">Investir</a>
-                    </div> -->
-                </div>
-                <hr>
-                <div class="investment-text">
-                    <!-- <h3 class="title">O capital privado está crescendo. A hora de investir é agora.</h3> -->
-                    <p>No Unibanco, o dinheiro, assim como as emoções, é algo que você deve controlar para manter sua vida nos trilhos. Acreditamos que equilibrar o seu dinheiro é a chave para ter o suficiente e a velocidade do seu sucesso é limitada apenas pela sua dedicação e pelo que você está disposto a sacrificar. É por isso que quando o dinheiro percebe que está em boas mãos, ele quer ficar e se multiplicar nessas mãos.</p><br>
-                    <p>O UNIBANCO está aqui para lhe dar acesso a esta oportunidade de crescimento sem precedentes
-                        para que você possa entrar em ação.</p>
-                    <!-- <div class="invest-link">
-                        <a href="#">Investir</a>
-                    </div> -->
+                    <div class="ibanking-container">
+                        <!-- <div>
+                            <h3>Conta partícular </h3>
+                        </div> -->
+                        <form action="" method="post" accept-charset="utf-8" id="ibanking-form">
+                            <div>
+                                <img src="../images/unibanco_U1_xl.png" alt="" >
+                            </div>
+                            <div>
+                                <label for="account_type">Tipo de conta</label>
+                                <select name="account_type" id="account_type">
+                                    <option selected disabled hidden>Selecione seu tipo de conta</option>
+                                    <option value="personal">
+                                        Conta particular
+                                    </option>
+                                    <option value="personal">
+                                        Conta empresarial
+                                    </option>
+                                </select>                 
+                            </div>
+                            <div>
+                                <label for="username">Nome do Usuário </label>
+                                <input type="text" name="username" placeholder="Insira seu nome do usuário" required />
+                            </div>
+                            <div>
+                                <label for="password">Senha</label>
+                                <span id="fit">
+                                    <input type="password" name="password" id="password" >
+    
+                                    <a href="#" id="pwordVisibilityContainer">
+                                        <img src="../images/view.png" alt="ShowImg" id="showImgPass" class="showImg">
+                                        <img src="../images/hidden.png" alt="hideImg" id="hideImgPass" class="hideImg">
+
+                                    </a>
+                                </span>
+                            </div>
+            
+                            <div>
+                                <span id="space-between">
+                                    <input type="checkbox" name="remember" id="remember" value="remember">
+                                    <label for="remember_me">Lembre de mim</label>
+                                </span>
+                            </div>
+                            <div>
+                                <input type="submit" name="login" value="Conecte-se">
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <p>
+                                        Palavra-chave esquecida?
+                                    </p> 
+                                </a>
+                            </div>
+                            
+                        </form>
+                    </div>
                 </div>
             </div>
 
@@ -365,5 +402,6 @@
 
 
     <script src="../js/index.js"></script>
+    <script src="../js/ibanking.js"></script>
 </body>
 </html>

@@ -38,6 +38,45 @@ menuCloseBtn.addEventListener("mouseout", function(){
 //================================================= Control for the Mobile view Navigation Ends here ========================================================
 
 
+//================================================= Control for the Internet banking starts here ========================================================
+const fit = document.getElementById("fit");
+const pword = document.getElementById("password")
+const showImg = document.getElementById("show")
+const hideImg = document.getElementById("hide")
+const visibility = document.getElementById("visibility")
+
+pword.addEventListener("focus", function(){
+    fit.style.border = "0.14rem solid var(--orange)"
+    fit.style.transition = "0.5s all ease-in-out"
+
+});
+
+pword.addEventListener("blur", function(){
+    fit.style.border = "0.14rem solid transparent"
+    fit.style.transition = "0.5s all ease-in-out"
+});
+
+showImg.addEventListener("click", function(){
+    showImg.classList.toggle("hide")
+    showImg.classList.remove("show")
+    hideImg.classList.toggle("show")
+    hideImg.classList.remove("hide")
+    pword.type = "text"
+    pword.style.borderColor = "transparent"
+})
+
+hideImg.addEventListener("click", function(){
+    showImg.classList.toggle("show")
+    showImg.classList.remove("hide")
+    hideImg.classList.toggle("hide")
+    hideImg.classList.remove("show")
+    pword.type = "password"
+    // showImg.src = "../images/hidden.png"
+    pword.type = "password"
+    pword.style.borderColor = "transparent"
+})
+//================================================= Control for the Internet banking Ends here ========================================================
+
 
 /*// assigning values to constants
 const logoText = document.getElementById("logo");
@@ -82,6 +121,6 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 15000); // Change image every 10 seconds
+  setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
 // This is the carousel end
